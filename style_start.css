@@ -1,8 +1,13 @@
+.global{
+    object-fit: fill;
+}
 .container{
-    display:flex;
+    display:grid;
     /* grid-template-rows: 25% 25% 25% 25%; */
-    /* grid-template-columns: 60% 40%; */
-    flex-wrap: wrap;
+    grid-template-columns: 60% 40%;
+    /* flex-wrap: wrap; */
+    /* padding-right: 5%; */
+    /* padding-left: 5%; */
 }
 div.sticky{
     /* display:flex; */
@@ -12,8 +17,9 @@ div.sticky{
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    flex-grow: 3;
-    flex-shrink: 1;
+    max-width: 60% ;
+    /* flex-grow: 3;
+    flex-shrink: 1; */
 }
 .scroll{
     /* display:flex; */
@@ -21,6 +27,7 @@ div.sticky{
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
-    flex-grow: 1;
-    /* flex-wrap: wrap; */
+    /* flex-grow: 1;
+    flex-wrap: wrap; */
+    max-width: 40%;
 }
